@@ -5,6 +5,276 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E library</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/solid.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
-  <body></body>
+  <body>
+
+        <!-- signup modal section -->
+        <div class="c-form modal-wrapper js-signup-modal">
+          <div class="container modal">
+            <button class="modal-btn">
+              <i class="fa fa-plus"></i>
+            </button>
+            <h2 class="c-form__title">إنشاء حساب</h2>
+    
+            <form class="c-form__form">
+              <div class="phone-group">
+                <div>
+                  <label for="signup-form-name">رقم الجوال</label>
+                  <input id="signup-form-name" type="text" />
+                </div>
+    
+                <div class="m-0">
+                  <label for="signup-form-name">رمز البلد</label>
+                  <select class="c-select">
+                    <option value="967">
+                      <span>967</span>
+                      <i class="fa fa-flag-usa"></i>
+                    </option>
+                  </select>
+                </div>
+              </div>
+    
+              <p>سوف نرسل لك رمز التحقق عن طريق رساله نصية</p>
+              <div>
+                <button>ارسال رمز التحقق</button>
+              </div>
+    
+              <div>
+                <label for="signup-form-name">الاسم الاول</label>
+                <input id="signup-form-name" type="text" />
+              </div>
+    
+              <div>
+                <label for="signup-form-family-name"> اسم العائلة </label>
+                <input id="signup-form-family-name" type="text" />
+              </div>
+    
+              <div>
+                <label>البريد الالكتروني</label>
+                <input type="email" />
+              </div>
+    
+              <div>
+                <label>تأكيد البريد الالكتروني</label>
+                <input type="email" />
+              </div>
+    
+              <div>
+                <label for="signup-form-pass">كلمة السر</label>
+                <input type="text" id="signup-form-pass" />
+              </div>
+    
+              <div class="checkbox-group">
+                <input type="checkbox" name="" id="signup-form-checkbox-term" />
+                <label for="signup-form-checkbox-term">
+                  <span> اوافق </span>
+    
+                  <a href=""> على الشروط و الاحكام </a>
+                </label>
+              </div>
+    
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="signup-form-checkbox-join-our-email"
+                />
+                <label for="signup-form-checkbox-join-our-email">
+                  التسجيل للانضام للنشرة البريدية
+                </label>
+              </div>
+    
+              <div>
+                <button>انشاء حساب</button>
+              </div>
+            </form>
+    
+            <p class="c-form__sign-up-link">
+              <span> لديك حساب؟ </span>
+    
+              <button class="js-show-login-modal">تسجيل الدخول</button>
+            </p>
+          </div>
+        </div>
+    
+        <!-- login modal section -->
+        <div class="c-form modal-wrapper js-login-modal">
+          <div class="container modal">
+            <button class="modal-btn">
+              <i class="fa fa-plus"></i>
+            </button>
+            <h2 class="c-form__title">تسجيل الدخول</h2>
+    
+            <form class="c-form__form">
+              <div>
+                <label for="login-form-name">
+                  البريد الالكتروني او رقم الجوال
+                </label>
+                <input id="login-form-name" type="text" />
+              </div>
+    
+              <div>
+                <label for="login-form-pass">كلمه السر</label>
+                <input type="text" id="login-form-pass" />
+    
+                <a href="" class="forget-pass-link"> نسيت؟ </a>
+              </div>
+    
+              <div>
+                <button>تسجيل الدخول</button>
+              </div>
+            </form>
+    
+            <p class="new-account-label">ليس لديك حساب؟</p>
+    
+            <div class="c-form__new-account-link">
+              <button class="js-show-signup-modal">انشاء حساب جديد</button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- header section -->
+        <header class="c-header">
+          <!-- header menu section -->
+          <div class="c-header-menu">
+            <div class="container">
+              <ul class="list">
+                <li class="item">
+                  <button class="js-show-signup-modal">
+                    <i class="fa fa-user"></i>
+                    ادخل لحسابك أو سجل الآن
+                  </button>
+                </li>
+                <li class="item">
+                  <a href="">
+                    <i class="fa fa-star"></i>
+                    المفضلة
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="">
+                    <i class="fa fa-bus"></i>
+    
+                    تتبع الشحنة
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="">
+                    <i class="fa fa-save"></i>
+    
+                    طلبات الصيانة
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="">
+                    <i class="fa fa-info-circle"></i>
+    
+                    المساعدة
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="">
+                    <i class="fa fa-podcast"></i>
+    
+                    فروعنا
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="">
+                    <i class="fa fa-cloud-moon"></i>
+                    المملكة العربية السعودية | ر.س
+                  </a>
+                </li>
+                <li class="item">
+                  <button data-lang="ar" class="lang-btn">
+                    <i class="fa fa-language"></i>
+                    English
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- nav -->
+          <div class="container">
+            <nav class="c-nav">
+              <!-- logo -->
+              <a href="index.html" class="logo">
+                <img src="img/icons/logo.svg" alt="" />
+              </a>
+    
+              <form action="" class="form">
+                <input type="text" name="search-input" placeholder="search...." />
+    
+                <button>
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+    
+              <a href="checkout.html">
+                <button class="shopping-btn">
+                  <i class="fa fa-shopping-cart"></i>
+    
+                  <span class="shopping-item-number"></span>
+                </button>
+              </a>
+            </nav>
+          </div>
+        </header>
+    
+        <!-- hero section-->
+        <section class="c-slider">
+          <div class="container">
+            <div class="list">
+              <div class="item">
+                <img src="img/slider/slider-1.jpg" alt="slider image" />
+              </div>
+              <div class="item">
+                <img src="img/slider/slider-2.webp" alt="slider image" />
+              </div>
+              <div class="item">
+                <img src="img/slider/slider-3.jpg" alt="slider image" />
+              </div>
+              <div class="item">
+                <img src="img/slider/slider-1.jpg" alt="slider image" />
+              </div>
+              <div class="item">
+                <img src="img/slider/slider-2.webp" alt="slider image" />
+              </div>
+              <div class="item">
+                <img src="img/slider/slider-3.jpg" alt="slider image" />
+              </div>
+    
+              <div class="c-slider-btn">
+                <button class="slider-next-btn">
+                  <i class="fa fa-angle-right"></i>
+                </button>
+    
+                <button class="slider-prev-btn">
+                  <i class="fa fa-angle-left"></i>
+                </button>
+              </div>
+    
+              <div class="c-slider-dotes"></div>
+            </div>
+          </div>
+        </section>
+
+        
+
+        <script src="js/slider.js"></script>
+        <script src="js/modal.js"></script>
+        <script>
+          slider({
+            items: '.c-slider .item',
+            nextBtn: '.slider-next-btn',
+            prevBtn: '.slider-prev-btn',
+            dotes: true,
+          });
+        </script>
+  </body>
 </html>
